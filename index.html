@@ -9,67 +9,133 @@
     <link rel="stylesheet" type="text/css" href="main.css" />
 </head>
 <body>
+        <div class="col-12 start_quiz">
+                <h1 class="header">Geography Quiz</h1>
+               <p>Test your Geography knowledge</p>
+               <button class="btn">Start Quiz</button>
+            </div>
+
     <h1 class="header">Geography Quiz</h1>
     <div class="col-12 quiz_info">
-        <div class="col-6 serial_no">
+        <span class="serial_no">
             2/4 Questions
-        </div>
-        <div class="col-6 score">
+        </span>
+        <span class="score">
                 2/4 Right Answers
-            </div>
+        </span>
     </div>
     <div class="row">
         <div class="col-12 question_box">
-            <ul>
-                <li class="question_li">
+            <form>
+                <fieldset>
+                <legend>
                    What is the longest river in North America?
-                   <ul class="options row">
-                       <li class="col-6">Mackenzie</li>
-                       <li class="col-6">Missouri</li>
-                       <li class="col-6">Mississippi</li>
-                       <li class="col-6">Yokun</li>
-                   </ul>
-                </li>
+                </legend>
+                   <div class="options row">
+                      <div class="col-6">
+                        <input type="radio" value="Mackenzie" name="options" id="options1" tabindex="1" >
+                        <label for="options1">Mackenzie</label>
+                        </div>
+                       
+                        
+                        <div class="col-6">
+                        <input type="radio" value="Missouri" name="options" id="options2" tabindex="2" >
+                        <label for="options2">Missouri</label>
+                        </div>
+                        <div class="col-6">
+                        <input type="radio" value="Mississippi" name="options" id="options3" tabindex="3" >
+                        <label for="options3">Mississippi</label>
+                        </div>
+                        <div class="col-6">
+                        <input type="radio" value="Yokun" name="options" id="options4" tabindex="4" >
+                        <label for="options4">Yokun</label>
+                        </div>
+                        <div class="row">
+                       <button type="submit" class="btn">Submit</button>
+                       </div>
+                    </div>
+                   
+                </fieldset>
+                </form>
+                  
 
-                <li class="question_li">
-                        Which country has the largest population in Africa?
-                        <ul class="options row">
-                            <li class="col-6">Egypt</li>
-                            <li class="col-6">South Africa</li>
-                            <li class="col-6">Ethiopia</li>
-                            <li class="col-6">Nigeria</li>
-                        </ul>
-                     </li>
+                <form>
+                        <fieldset>
+                        <legend>
+                           What is the longest river in North America?
+                        </legend>
+                           <div class="options row">
+                               <div class="col-6">
+                                <input type="radio" value="Mackenzie" name="options" id="options1" tabindex="1" >
+                                <label for="options1">Mackenzie</label>
+                                <br/>
+                                <div class="incorrect">THAT's WRONG.RIGHT ANSWER IS <br/> Mississippi</div>
+                                </div>
+                                <div class="col-6">
+                                <input type="radio" value="Missouri" name="options" id="options2" tabindex="2" >
+                                <label for="options2">Missouri</label>
+                                </div>
+                                <div class="col-6">
+                                <input type="radio" value="Mississippi" name="options" id="options3" tabindex="3" >
+                                <label for="options3">Mississippi</label>
+                                </div>
+                                <div class="col-6">
+                                <input type="radio" value="Yokun" name="options" id="options4" tabindex="4" >
+                                <label for="options4">Yokun</label>
+                                </div>
+                                
+                           </div>
+                           <div class="row">
+                                <button type="submit" class="btn">Next</button>
+                             </div>
+                        </fieldset>
+                        </form>
 
-                     <li class="question_li">
-                            What is by surfaace area, the largest island in the Carribean Sea?
-                            <ul class="options row">
-                                <li class="col-6">Cuba</li>
-                                <li class="col-6">Hispaniola</li>
-                                <li class="col-6">Jamaica</li>
-                                <li class="col-6">Puerto Rico</li>
-                            </ul>
-                         </li>
 
-                         <li class="question_li">
-                                What is the highest (from sealevel to top)mountain in Oceania?
-                                <ul class="options row">
-                                    <li class="col-6">Mount Kosciuszko</li>
-                                    <li class="col-6">Puncak Trikora</li>
-                                    <li class="col-6">Mauna Kea</li>
-                                    <li class="col-6">Puncack Jaya</li>
-                                </ul>
-                             </li>
-            </ul>
+
+                        <form>
+                                <fieldset>
+                                <legend>
+                                   What is the longest river in North America?
+                                </legend>
+                                   <div class="options row">
+                                       <div class="col-6">
+                                        <input type="radio" value="Mackenzie" name="options" id="options1" tabindex="1" >
+                                        <label for="options1">Mackenzie</label>
+                                        
+                                        </div>
+                                        <div class="col-6">
+                                        <input type="radio" value="Missouri" name="options" id="options2" tabindex="2" >
+                                        <label for="options2">Missouri</label>
+                                        <br/>
+                                        <div class="correct">THAT'S RIGHT!.</div>
+                                        </div>
+                                        <div class="col-6">
+                                        <input type="radio" value="Mississippi" name="options" id="options3" tabindex="3" >
+                                        <label for="options3">Mississippi</label>
+                                        </div>
+                                        <div class="col-6">
+                                        <input type="radio" value="Yokun" name="options" id="options4" tabindex="4" >
+                                        <label for="options4">Yokun</label>
+                                        </div>
+                                        <div class="row">
+                                       <button type="submit" class="btn">Next</button>
+                                    </div>
+                                   </div>
+                                </fieldset>
+                                </form>
+
+                
+            
         </div>
-        <div class="col-12">
-            <button class="next_btn">Next >></button>
-        </div>
+       
 
        
 
         <div class="col-12 score_board">
+            <h1 class="header">Geography Quiz</h1>
            <p>Your score is 5/5</p>
+           <button class="btn">Restart Quiz</button>
         </div>
     </div>
 </body>
