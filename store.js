@@ -55,7 +55,63 @@ const STORE = {
                 "Amazon"
             ],
             correct:"Amazon"
-        }
+        },
+        {
+          question: "What is the highest mountain in Africa?",
+          options:[
+            "Mount Kenya",
+            "Mount Meru",
+            "Mount Kilimanjaro",
+            "Mount Stanely"
+          ],
+          correct:"Mount Kilimanjaro"
+        },
+        {
+          question:"Which country is the fifth largest by surface area in the world",
+          options:[
+             "Australia",
+             "Argentina",
+             "Brazil",
+             "India"  
+          ],
+          correct:"Brazil"
+
+        },
+        {
+          question:"Stockholm is capital of which country?",
+          options:[
+            "Pakistan",
+            "United Kingdom",
+            "Iraq",
+            "Sweden"
+          ],
+          correct: "Sweden"
+        },
+        {
+          question:"London is capital of which country?",
+          
+         
+          options:[
+            "United Kingdom",
+            "India",
+            "Australia",
+            "Brazil"
+          ],
+          correct:"London"
+        },
+
+     {
+       question:"Suez Canal is located in or near which of these locations?",
+       options:[
+         "United States",
+         "Egypt",
+         "Israel",
+         "Panama"
+       ],
+       correct:"Egypt"
+     }
+
+
     
     ]
 }

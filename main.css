@@ -1,6 +1,50 @@
 *
 {
     box-sizing: border-box;
+    font-family: 'Lobster Two', cursive;
+    
+}
+
+body {
+background-image:url('https://media.nationalgeographic.org/assets/photos/000/276/27666.jpg');
+  background-size:cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  
+}
+
+
+.main{
+  background-color: black;
+  color:white;
+  position:relative;
+  top: 30px;
+  border: 10px solid goldenrod;
+  border-radius: 5%;
+  font-size: 20px;
+  margin: 8% auto 0px auto;
+  padding: 2%;
+  line-height:40px;
+}
+
+.btn
+{
+  border-radius: 10%;
+  font-weight: 100;
+  float:right;
+  width: fit-content;
+}
+
+.js-quiz-box p {
+  text-align: center;
+  font-size: 22px;
+}
+
+.js-quiz-box
+{
+  font-size: 25px;
+  letter-spacing: 1px;
 }
 
 .row::after{
@@ -51,17 +95,18 @@ li{
 .header
 {
     text-align: center;
+    font-size: 30px;
 }
 
 .btn
 {
     color: black;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 20px;
     padding: 10px;
     background-color: aquamarine;
     border: 1px solid aquamarine;
-    float: right;
+  
     
 }
 
@@ -82,8 +127,11 @@ li{
     }
 
     form{
-        border: 1px solid black;
+        border: 1px solid floralwhite;
         padding: 10px;
+        animation:showanimate;
+        animation-duration:4s;
+        
     }
 
     .incorrect
@@ -91,14 +139,24 @@ li{
         border: 1px solid red;
         padding: 0px 10px;
         width: fit-content;
+         margin: 2px;
+         background-color:red;
     }
 
     .correct{
-        border: 1px solid green;
+        border: 2px solid green;
+        background-color: green;
         padding: 0px 10px;
         width: fit-content;
+        margin: 2px;
     }
 
+    .hide
+    {
+      display: none;
+    }
+
+   
 
 .score
 {
@@ -106,10 +164,10 @@ li{
     float: right;
 }
 
-.serial_no
+.serial_no,#score
 {
     font-size: 15px;
-    
+    float:left;
 }
 
 
@@ -135,3 +193,29 @@ li{
     padding: 10px;
 }
 
+
+
+@keyframes showanimate {
+  from{display: none;}
+  to{display:block;}
+}
+
+@media screen and (max-width:992px)
+{
+  *
+  {
+    font-size:28px;
+    
+  }
+  .score,.serial_no,#score{
+      font-size: 22px;
+  }
+  .js-quiz-box{
+      font-size: 22px;
+  }
+  .col-12{
+    width:100%;
+    margin: 0 auto;
+    max-width: 80vw;
+  }
+}
